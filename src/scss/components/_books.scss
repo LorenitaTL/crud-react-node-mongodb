@@ -1,13 +1,29 @@
 .books {
   @include background($primary);
+  margin: 0rem 3rem 0rem 3rem;
+  @include shadow($secondary);
+  border-radius: 10px;
 
   .header {
     display: flex;
+    
+
+    .item {
+      width: 20%;
+    }
   }
   .content {
+    @include background($secondary);
     .book {
       display: flex;
       font-family: $font-family-2;
+      justify-content: space-between;
+      align-items: center;
+      border: 0.5px solid $primary;
+      .data {
+        width: 20%;
+        padding: 0 0.5rem 0 0.5rem;
+      }
 
       .edit {
         @include button($warning);

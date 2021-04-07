@@ -4,14 +4,14 @@ import { Book } from "./Book";
 export const Books = () => {
   return (
     <div className="books">
-      <h2>BOOKS LIST</h2>
       <div className="list">
         <div className="header">
-          <h4>ISBN</h4>
-          <h4>NAME OF BOOK</h4>
-          <h4>AUTHOR</h4>
-          <h4>EDITORIAL</h4>
-          <h4>ACTIONS</h4>
+          <big className="item"><h3>ISBN</h3></big>
+          <big className="item"><h3>NAME OF BOOK</h3></big>
+          <big className="item"><h3>AUTHOR</h3></big>
+          <big className="item"><h3>EDITORIAL</h3></big>
+          <big className="item"><h3>ACTIONS</h3></big>
+          
         </div>
         <div className="content">
           <Book />

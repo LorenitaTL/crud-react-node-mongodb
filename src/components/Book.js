@@ -3,13 +3,25 @@ import React from "react";
 export const Book = () => {
   return (
     <div className="book">
-      <p>123456-789123</p>
-      <p>Harry Potter</p>
-      <p>JK Rowling</p>
-      <p>Bloomsbury</p>
-      <div>
-        <button className="edit">E</button>
-        <button className="delete">D</button>
+      <div className="data">
+        <p>123456-789123</p>
+      </div>
+      <div className="data">
+        <p>Harry Potter</p>
+      </div>
+      <div className="data">
+        <p>JK Rowling</p>
+      </div>
+      <div className="data">
+        <p>Bloomsbury</p>
+      </div>
+      <div className="data">
+        <button className="edit">
+          Edit <i className="fas fa-edit"></i>
+        </button>
+        <button className="delete">
+          Delete <i class="fa fa-trash" aria-hidden="true"></i>
+        </button>
       </div>
     </div>
   );

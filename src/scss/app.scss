@@ -3,6 +3,7 @@
 
 @import "./components/form";
 @import "./components/books";
+@import "./components/search_bar";
 html {
   @include box-sizing(border-box);
   font-family: $font-family;
@@ -21,5 +22,8 @@ body {
 
 .header {
   padding: 1rem;
-  text-align: center;
+
+  h1 {
+    text-align: center;
+  }
 }
