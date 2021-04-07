@@ -1,0 +1,21 @@
+.books {
+  @include background($primary);
+
+  .header {
+    display: flex;
+  }
+  .content {
+    .book {
+      display: flex;
+      font-family: $font-family-2;
+
+      .edit {
+        @include button($warning);
+      }
+
+      .delete {
+        @include button($danger);
+      }
+    }
+  }
+}

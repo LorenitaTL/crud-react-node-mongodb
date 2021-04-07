@@ -1,0 +1,39 @@
+.new-book {
+  display: flex;
+  justify-content: center;
+  .form {
+    @include background($primary);
+    width: 60%;
+    h2 {
+      text-align: center;
+      padding: 0.5rem;
+    }
+
+    .input-form {
+      margin: 1.5rem;
+      label {
+        text-transform: uppercase;
+      }
+      input {
+        @include background(transparent);
+        border: none;
+        @include shadow($secondary);
+        height: 2rem;
+        width: 100%;
+        border-radius: 10px;
+        margin-top: 0.5rem;
+      }
+    }
+
+    .options {
+      display: flex;
+      justify-content: center;
+      #clear {
+        @include button($cancel);
+      }
+      #save {
+        @include button($success);
+      }
+    }
+  }
+}
