@@ -27,13 +27,15 @@
         text-transform: uppercase;
       }
       input {
-        @include background(transparent);
         border: none;
-        @include shadow($secondary);
+        color: $light;
         height: 2rem;
         width: 100%;
         border-radius: 10px;
         margin-top: 0.5rem;
+        padding: 0.5rem;
+        @include background(transparent);
+        @include shadow($secondary);
       }
     }
 
