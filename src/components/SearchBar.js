@@ -11,6 +11,7 @@ export const SearchBar = () => {
 
   const handleInputChange = (e) => {
     setInputValue(e.target.value);
+    //TODO: IMplement setInputValue
   };
 
   return (
